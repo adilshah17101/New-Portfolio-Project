@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #aa50c8 46%, #FFCC70 100%);
+
+}
+@font-face {
+    font-family: popins;
+    src: url(../text-style/Poppins-BlackItalic.ttf);
+}
+.title {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: popins;
+    text-shadow: 2px 2px #ff0000;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+.title:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: popins;
+    text-shadow: 2px 2px #ffffff;
+    font-size: 25px;
+}
+input{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #131314;
+background-image: linear-gradient(43deg, #131314 0%, #5e3e5e 46%, #392c14 100%);
+
+    outline: none;
+    width: 220px;
+    border: solid .2px rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+
+
+}
+input::placeholder{
+    color: honeydew;
+    font-size: 15px;
+}
+form td {
+    color: rgb(14, 13, 13);
+    font-size: 20px;
+    font-weight: bolder;
+   background-image: linear-gradient( 135deg, #6dfd19 10%, #E80505 80%);
+   box-shadow: 1px 0 1px 3px;
+   border-radius: 10px;
+}
+table {
+    margin-bottom: 55px;
+    border: solid rgb(10, 10, 4);
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+}
+select, .drop{ 
+      color: #fff;
+      background-color: #360940;
+    padding: 8px;
+    border-radius: 10px;
+background-image: linear-gradient(43deg, #131314 0%, #5e3e5e 46%, #392c14 100%);
+    outline: none;
+    width: 220px;
+    border: solid .2px rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+}
+select::placeholder{
+    color: #ffffff;
+}
+#submit{
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    margin: 1px;
+    border-radius:  10px;
+    background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+
+}
+#submit:hover{
+    color: #fff;
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+    margin: 1px;
+    border-radius:  10px;
+    background-image: linear-gradient( 135deg, #386d33 10%, #8C1BAB 100%);
+}
+#submit2 {
+   padding: 15px;
+   background-image: linear-gradient( 135deg, #FDD819 10%, #E80505 100%);
+   border-radius: 10px;
+   width: 10rem;
+   margin-left: 10px;
+}
+#submit2 a {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    
+}
+#submit2:hover {
+    padding: 15px;
+    background-image: linear-gradient( 135deg, #e219fd 10%, #05e891 100%);
+    border-radius: 10px;
+    width: 10rem;
+    margin-left: 10px;
+ }

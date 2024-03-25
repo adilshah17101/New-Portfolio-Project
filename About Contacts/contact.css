@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ body{
+    background-color: hsla(56, 100%, 25%, 0.822); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+p {
+    opacity: .89;
+    padding: 10px;
+    color: rgb(253, 253, 253);
+    font-size: 18px;
+    font-style: italic;
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-right: -10px;
+}
+.container{
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    background-color: red;
+    opacity: .9;
+    margin-top: 50px;
+    width: 500px;
+   box-shadow: 1px 2px 0 3px;
+    justify-content: center;
+    padding: 60px;
+    align-items: center;
+    
+
+}
+.body{
+    margin: 50px;
+}
+.contact{
+    opacity: .8;
+    margin-left: -35px;
+    margin-top: 12px;
+    width: 250px;
+    border-top-right-radius: 100px; border-bottom-right-radius: 100px;
+    background-color: black;
+    padding: 15px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body li,a{
+    color:#f8fc0c;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    
+}
+.body img {
+    margin-top: 15px;
+   
+}
+button{
+    padding: 10px;
+    background-color: rgb(255, 0, 191);
+    border-radius: 10px;
+    box-shadow: #f8fc0c 1px 0 1px 2px;
+   
+}
+button:hover{
+    padding: 10px;
+    
+    background-color: rgb(255, 0, 191);
+    border-radius: 10px;
+    box-shadow: #20fc0c 1px 0 1px 5px;
+    
+   
+}

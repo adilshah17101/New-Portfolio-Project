@@ -5,52 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
-   <style>
-    #pic{
-        border-radius:50% ;
-    }
-   </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <center>
-        <h1>Home Page</h1>
-    </center>
-    <iframe align="right" width="500" height="315" src="https://www.youtube.com/embed/Cztg9xpD3A4?si=gnR5E12eG50AaG9x"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <span><h1>My Profile </h1></span><img id="pic" src="./Images/adi-lpic.jpg" width="200" alt="Photo Error">
-    <center></center>
-    <div>
-        <h2>My name is "ADIL SHAH". I belong to Charsadda....! </h2>
-    </div>
+    <nav class="navigation">
+        <img id="logo" src="./Images/logo.webp" width="55" alt="">
+        <a href="./About Skills/skill.html">My Skills</a>
+        <a href="./About Projects/projects.html">My Projects</a>
+        <a href="./About Contacts/contact.html">My Contacts</a>
+        <div class="dropdown">
+            <button class="dropbtn">Qualification</button>
+            <div class="dropdown-cnt">
+                <a class="box" href="./About Qualification/admission.html">Admission Form</a>
+                <a class="box" href="./About Qualification/fsc.html"> DMC</a>
+            </div>
+        </div>
+        <button id="hirbtn"> <a class="hirme" href="mailto:gulamalishah17101gmail.com">Hire Me</a></button>
+    </nav>
+    <div class="container">
+        <div class="video"><iframe align="right" width="400" height="315"
+                src="https://www.youtube.com/embed/Cztg9xpD3A4?si=gnR5E12eG50AaG9x" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
 
-    <div><audio src="./Images/audio.m4a" controls></audio>
-        <h3>"Muhammad (SAW) is not the father of any man among you, but he is the Messenger of Allah and the last (end) of the Prophets. And Allah is Ever AllAware of everything.</h3>
+        <div class="img"><img id="pic" src="./Images/adi-lpic.jpg" width="200" alt="Photo Error">
+            <img id="speaker" style="cursor: pointer;" src="./Images/Speaker_Icon.svg" width="40" alt="">
+        </div>
+
+        <div class="para"><span>My name is "ADIL SHAH". I belong to Charsadda....! </span>
+
+            <p>"Muhammad (SAW) is not the father of any man among you, but he is the Messenger of Allah and the last
+                (end)
+                of the Prophets. And Allah is Ever AllAware of everything.</p>
+        </div>
     </div>
-    <div><iframe
+    <div id="map"><iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26418.03833094511!2d71.83550089501502!3d34.13982300016404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d9369d4a7ea18d%3A0x78a62b8efa350b72!2sIbrahim%20Zai%2C%20Charsadda%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1710407866240!5m2!1sen!2s"
-            width="300" align="right" style="border:0;" allowfullscreen="" loading="lazy"
+            width="200" style="border:0;" align="right" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
     <nav>
-        <h3><a href="./About Skills/skill.html">My Skills:</a></h3>
-        <h3><a href="./About Projects/projects.html">My Projects</a></h3>
-        <h3><a href="./About Contacts/contact.html">My Contacts</a></h3>
-        <h3><a href="#dmc">My Qualification</a></h3>
-        <ul>
-            <li>
-                <h3><a href="./About Qualification/admission.html">Admission Form</a></h3>
-            </li>
-            <li>
-                <h3 id="dmc"><a href="./About Qualification/fsc.html">My F.Sc DMC</a></h3>
-            </li>
-        </ul>
+        <div class="dropdown1">
+            <button class="dropbtn1">Qualification</button>
+            <div class="dropdown-cnt1">
+                <a class="box" href="./About Qualification/admission.html">Admission Form</a>
+                <a class="box" href="./About Qualification/fsc.html">My F.Sc DMC</a>
+            </div>
+        </div>
+
+        <a class="box" href="./About Skills/skill.html">My Skills:</a>
+        <a class="box" href="./About Projects/projects.html">My Projects</a>
+        <a class="box" href="./About Contacts/contact.html">My Contacts</a>
     </nav>
-
-
-
+    </div>
+    <script>
+        const play = document.getElementById("speaker");
+        function playmusic() {
+            const sound = new Audio("./Images/audio.m4a");
+            sound.play();
+            play.removeEventListener("click", playmusic); // Remove the event listener after playing once
+        }
+        play.addEventListener("click", playmusic);
+    </script>
 
 </body>
 

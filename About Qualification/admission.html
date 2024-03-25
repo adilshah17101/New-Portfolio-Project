@@ -4,89 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-        
+       <div class="title"> <h1> Form</h1></div>
+   <div class="form"> <form action="">
     <center>
-        <h1> Form</h1>
-    </center>
+        <table border="1" cellpadding="20% width="100%" cellspacing="25" cellpadding="1">
+            <tr>
+                <td>User Name <input placeholder="User Name" type="text" /></td>
+                <td>Father Name <input placeholder="Father Name" type="text" /></td>
+            </tr>
+            <tr>
+                <td>User CINC <input type="number" /></td>
+                <td>Father CINC <input type="number" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Mattric Marks <input placeholder="Enter Marks" type="number" /></p>
+                </td>
+                <td>Fsc Marks <input placeholder="Enter Marks" type="number" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Date of Birth <input type="date" </p>
+                </td>
+                <td>Select Gender <Select id="#" name="Gender">
+                    <option class="drop"></option>
+                    <option class="drop" value="Male">Male</option>
+                    <option class="drop" value="Female">Female</option>
+                    <option class="drop" value="other">Other</option>
+                    </Select></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Email <input clt placeholder="Email" type="email" /></p>
+                </td>
+                <td>Phone <input clt placeholder="Enter Phone number" type="tell" </td>
+            </tr>
+            <tr>
+                <td>
+                    Select City<select name="city">
+                        <option value="enter your city">Enter your current City</option>
+                        <option value="Charsadda"> Charsadda City</option>
+                        <option value="Peshawar">Peshawar City</option>
+                        <option value="Islamabad">Islamabad City</option>
+                        <option value="Karachi">Karachi City</option>
 
-    <form action="">
-        <center>
-            <table border="1" cellpadding="20% width="100%" cellspacing="25" cellpadding="1">
-                <tr>
-                    <td>User Name <input placeholder="User Name" type="text" /></td>
-                    <td>Father Name <input placeholder="Father Name" type="text" /></td>
-                </tr>
-                <tr>
-                    <td>User CINC <input type="number" /></td>
-                    <td>Father CINC <input type="number" /></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Mattric Marks <input placeholder="Enter Marks" type="number" /></p>
-                    </td>
-                    <td>Fsc Marks <input placeholder="Enter Marks" type="number" /></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            Date of Birth <input type="date" </p>
-                    </td>
-                    <td>Select Gender <Select id="#" name="Gender">
-                            <option></option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="other">Other</option>
-                        </Select></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Email <input clt placeholder="Email" type="email" /></p>
-                    </td>
-                    <td>Phone <input clt placeholder="Enter Phone number" type="tell" </td>
-                </tr>
-                <tr>
-                    <td>
-                        Select City<select name="city">
-                            <option value="enter your city">Enter your current City</option>
-                            <option value="Charsadda"> Charsadda City</option>
-                            <option value="Peshawar">Peshawar City</option>
-                            <option value="Islamabad">Islamabad City</option>
-                            <option value="Karachi">Karachi City</option>
-
-                    <td>
-                        Select Course<select name="Course">
-                            <option value="select">Selct a Course</option>
-                            <option value="web and app deveoplment">Web and app deveoplment</option>
-                            <option value="sybersecurity">Syberceurity</option>
-                            <option value="video animatio">Video Animation</option>
-                        </select> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Do you have a laptop <select id="#" value="laptop">
-                                <option value=""></option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select></p>
-                    </td>
-                    <td>
-                        <p>Your financial Backround </p><textarea name="Backround" cols="50%" rows="3" class="box" aria-setsize="100%"></textarea>
-                    </td>
-                </tr>
-            </table>
-        </center>
-        <center>
-
-
-            <p>Upload your Picture </p>
-            <input style="color: rgb(212, 56, 17);" type="image"/>
-            <center>
-                <button>Submit Form</button>
-            </center>
-        </center>
-    </form>
-       <h2><a href="../index.html">Go Back</a></h2>
+                <td>
+                    Select Course<select name="Course">
+                        <option value="select">Selct a Course</option>
+                        <option value="web and app deveoplment">Web and app deveoplment</option>
+                        <option value="sybersecurity">Syberceurity</option>
+                        <option value="video animatio">Video Animation</option>
+                    </select> </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Do you have a laptop <select id="#" value="laptop">
+                            <option value=""></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select></p>
+                </td>
+                <td>
+                    <p>Your financial Backround </p><textarea name="Backround" cols="50%" rows="3" class="box" aria-setsize="100%"></textarea>
+                </td>
+            </tr>
+        </table>
+            <button id="submit">Submit Form</button>
+</form></div>
+       <button id="submit2"><a  href="../index.html">Go Back</a></button>
 </body>
 </html>

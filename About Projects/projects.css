@@ -1,0 +1,25 @@
+
+body{
+    background-color: aquamarine;
+}
+.projects{
+    background-color: brown;
+    color: white;
+    ul dd{
+       font-size: 18px;
+       
+    }
+}
+
+
+button{
+    padding: 2px;
+    background-color: rgba(6, 10, 7, 0.842);
+     border-radius: 50%;
+     box-shadow: 1px 0 2px 2px snow;
+    
+}
+button a {
+    color: #fff;
+    text-decoration: none;
+}
